@@ -1,12 +1,12 @@
 version: "3"
 services:
   api:
-    build: .
+    build: server/api-routes
     ports:
       - "3000:3000"
      
   client:
-    build: ../../client/client_routes
+    build: client/client_routes
     ports:
       - "3001:3000"
     depends_on: 
