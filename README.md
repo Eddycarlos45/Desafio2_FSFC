@@ -17,11 +17,11 @@ Você NÃO precisa utilizar um Cloud Provider como AWS, GCP e Azure para realiza
 Crie uma pasta chamada k8s no seu repositório do github (utilizado no desafio anterior) e informe no campo abaixo.
 
 - Executar o servidor:
-1 - ` kubectl apply -f server/k8s/deployment.yml`
-2 - ` kubectl apply -f server/k8s/service.yml`
-3 - ` kubectl port-forward service/server-service 3000:3000` (aplicação estará rodando na porta 3000)
+1 - ` kubectl apply -f server/k8s/deployment.yml` </br>
+2 - ` kubectl apply -f server/k8s/service.yml` </br>
+3 - ` kubectl port-forward service/server-service 3000:3000` (aplicação estará rodando na porta 3000) </br>
 
 - Executar a aplicação React:
-1 - ` kubectl apply -f client/k8s/deployment.yml`
-2 - ` kubectl apply -f server/k8s/service.yml`
-3 - ` kubectl port-forward service/server-service 3001:3000`
+1 - ` kubectl apply -f client/k8s/deployment.yml` </br>
+2 - ` kubectl apply -f server/k8s/service.yml` </br>
+3 - ` kubectl port-forward service/server-service 3001:3000` </br>
